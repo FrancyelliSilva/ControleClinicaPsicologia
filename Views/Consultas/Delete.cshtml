@@ -1,0 +1,49 @@
+﻿@model ControleClinicaPsicologia.Models.Consulta
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Você tem certeza que deseja deletar essa consulta?</h3>
+<div>
+   
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Data e Hora da Consulta
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataConsulta)
+        </dd>       
+        <dt class = "col-sm-2">
+            Nome do Paciente
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteNome)
+        </dd>
+        <dt class = "col-sm-2">
+           Nome do Psicologo
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PsicologoNome)
+        </dd>
+        <dt class="col-sm-2">
+           Telefone do Paciente
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt class="col-sm-2">
+            Observações
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Observacoes)
+        </dd>
+        </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ConsultaId" />
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-primary">Voltar</a>
+    </form>
+</div>

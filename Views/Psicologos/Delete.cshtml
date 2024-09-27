@@ -1,0 +1,43 @@
+﻿@model ControleClinicaPsicologia.Models.Psicologo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Você gostaria de deletar o cadastro deste Psicólogo?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nome do Psicólogo
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PsicologoNome)
+        </dd>
+        <dt class = "col-sm-2">
+            Especialidade
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+        <dt class = "col-sm-2">
+            Numero do Registro
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroRegistro)
+        </dd>
+        <dt class="col-sm-2"> 
+            Telefone
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+    </dl>
+    <hr/>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="PsicologoId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary my-2 my-sm-0">Voltar</a>
+    </form>
+</div>

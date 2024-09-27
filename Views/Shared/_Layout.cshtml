@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Clinica VivaMente</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ControleClinicaPsicologia.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-secondary bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+
+                <img src="/mente-removebg-preview.png" width="85" height="85" class="d-inline-block align-top" alt="">
+                <a class="navbar-brand text-secondary" asp-area="" asp-controller="Home" asp-action="Index" style="font-weight: bold;">
+                    INÍCIO
+                </a>
+
+                <ul class= "navbar-nav flex-grow-1" role="tablist">
+           
+            <li class="nav-item dropdown">
+               <a class="nav-link text-secondary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">PSICÓLOGOS</a>
+             <div class="dropdown-menu" style="">
+               <a class="dropdown-item" href="/Psicologos">Visualizar</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="/Psicologos/Create">Criar cadastro</a>
+             </div>
+            </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-secondary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">PACIENTES</a>
+                        <div class="dropdown-menu" style="">
+                            <a class="dropdown-item" href="/Pacientes">Visualizar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Pacientes/Create">Criar cadastro</a>
+                        </div>
+                    </li>
+                               
+                                                                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-secondary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">CONSULTA</a>
+                            <div class="dropdown-menu" style="">
+                                <a class="dropdown-item" href="/Consultas">Visualizar</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/Consultas/Create">Agendar Consulta</a>
+                            </div>
+                        </li>
+                    </ul>
+                
+            </div>
+        </nav>
+
+       
+
+       
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

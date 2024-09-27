@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ControleClinicaPsicologia.Models.Psicologo>
+
+@{
+    ViewData["Title"] = "Psicólogos";
+}
+
+<h1>Psicólogos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nome do Psicólogo
+            </th>
+            <th>
+                Especialidade
+            </th>
+            <th>
+                Numero do Registro
+            </th>
+            <th>
+                Telefone
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PsicologoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Especialidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PsicologoId" class = "btn btn-primary btn-sm">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@item.PsicologoId" class = "btn btn-primary btn-sm">Deletar</a>
+            </td>
+        </tr>
+            
+    
+}
+    </tbody>
+</table>
+
+  

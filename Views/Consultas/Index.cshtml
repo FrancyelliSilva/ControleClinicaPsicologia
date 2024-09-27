@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ControleClinicaPsicologia.Models.Consulta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Consultas Agendadas</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Data e Hora da Consulta
+            </th>
+            <th>
+                Nome do Paciente
+            </th>
+            <th>
+                Nome do Psicologo
+            </th>
+            <th>
+                Telefone
+            </th>
+            <th>
+                Observações
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataConsulta)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PsicologoNome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Observacoes)
+                </td>
+
+                <td>
+                <a asp-action="Edit" asp-route-id="@item.ConsultaId" class="btn btn-primary">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@item.ConsultaId" class="btn btn-primary">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
