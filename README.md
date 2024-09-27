@@ -1,9 +1,12 @@
 Visão Geral do Projeto
+
 O projeto "Viva Mente" é um sistema de controle para uma clínica de psicologia, desenvolvido com ASP.NET Core MVC. O objetivo é gerenciar o cadastro de pacientes, psicólogos e agendamentos de consultas.
 
 Tecnologias Utilizadas
+
 Banco de Dados
 SQL Server 19: Sistema gerenciador de banco de dados, com a criação das tabelas: Consultas, Pacientes e Psicólogos.
+
 Linguagens de Programação e Frameworks
 C#: Linguagem principal utilizada para desenvolvimento back-end.
 ASP.NET Core MVC: Framework para construção da aplicação web, utilizando o padrão MVC.
@@ -12,6 +15,7 @@ JavaScript: Utilizado para interatividade no front-end.
 jQuery: Biblioteca JavaScript para manipulação do DOM e chamadas AJAX.
 Bootstrap: Framework CSS para construção de interfaces responsivas e modernas.
 HTML/CSS: Linguagens para estruturação e estilização da interface do usuário.
+
 Segurança
 Token JWT (JSON Web Token): Componente de segurança que garante que apenas usuários autorizados possam acessar recursos protegidos.
 Funcionalidades
