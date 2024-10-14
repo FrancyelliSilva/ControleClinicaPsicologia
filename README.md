@@ -10,11 +10,17 @@ SQL Server 19: Sistema gerenciador de banco de dados, com a criação das tabela
 Linguagens de Programação e Frameworks
 
 C#: Linguagem principal utilizada para desenvolvimento back-end.
+
 ASP.NET Core MVC: Framework para construção da aplicação web, utilizando o padrão MVC.
+
 Entity Framework Core: ORM para interação com o banco de dados.
+
 JavaScript: Utilizado para interatividade no front-end.
+
 jQuery: Biblioteca JavaScript para manipulação do DOM e chamadas AJAX.
+
 Bootstrap: Framework CSS para construção de interfaces responsivas e modernas.
+
 HTML/CSS: Linguagens para estruturação e estilização da interface do usuário.
 
 Segurança
