@@ -8,6 +8,7 @@ Banco de Dados
 SQL Server 19: Sistema gerenciador de banco de dados, com a criação das tabelas: Consultas, Pacientes e Psicólogos.
 
 Linguagens de Programação e Frameworks
+
 C#: Linguagem principal utilizada para desenvolvimento back-end.
 ASP.NET Core MVC: Framework para construção da aplicação web, utilizando o padrão MVC.
 Entity Framework Core: ORM para interação com o banco de dados.
@@ -17,8 +18,11 @@ Bootstrap: Framework CSS para construção de interfaces responsivas e modernas.
 HTML/CSS: Linguagens para estruturação e estilização da interface do usuário.
 
 Segurança
+
 Token JWT (JSON Web Token): Componente de segurança que garante que apenas usuários autorizados possam acessar recursos protegidos.
+
 Funcionalidades
+
 Cadastro de Pacientes: Registro de novos pacientes com informações pessoais e de contato.
 Cadastro de Psicólogos: Cadastro de psicólogos com suas especialidades e números de registro.
 Agendamento de Consultas: Visualização de todas as consultas agendadas, incluindo detalhes de pacientes e psicólogos.
